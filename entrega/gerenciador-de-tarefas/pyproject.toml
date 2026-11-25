@@ -1,0 +1,13 @@
+[project]
+name = "gerenciador-de-tarefas"
+version = "1.0.0"
+description = "Gerenciador de tarefas em linha de comando, feito em Python."
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+tarefas = "tarefas.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
